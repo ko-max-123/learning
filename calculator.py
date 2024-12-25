@@ -1,4 +1,5 @@
 import tkinter as tk
+import speech_recognition as sr
 
 class Calculator(tk.Tk):
     def __init__(self):
@@ -15,6 +16,10 @@ class Calculator(tk.Tk):
         self.result_entry.grid(row=0, column=0, columnspan=4, pady=(10, 20))  # 上下に余白を追加
         self.result_entry.bind("<KeyPress>", self.validate_key)  # 入力検証
         self.result_entry.bind("<BackSpace>", self.backspace)  # バックスペース対応
+
+        # 音声入力ボタン
+        voice_button = tk.Button(self, text="🎤", font=("Arial", 18), command=self.voice_input)
+        voice_button.grid(row=0, column=4, padx=5, pady=5)  # 音声入力ボタンを追加
 
         # ボタン配置
         buttons = [
@@ -59,6 +64,19 @@ class Calculator(tk.Tk):
         current_text = self.result_var.get()
         self.result_var.set(current_text[:-1])  # 最後の文字を削除
         return "break"
+
+    def voice_input(self):
+        recognizer = sr.Recognizer()
+        with sr.Microphone() as source:
+            try:
+                self.result_var.set("リスニング中...")
+                audio = recognizer.listen(source)
+                command = recognizer.recognize_google(audio, language="ja-JP")  # 日本語対応
+                self.result_var.set(command)
+            except sr.UnknownValueError:
+                self.result_var.set("音声認識失敗")
+            except sr.RequestError:
+                self.result_var.set("認識エラー")
 
     def on_button_click(self, char):
         if char == "C":
