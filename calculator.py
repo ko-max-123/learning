@@ -18,8 +18,8 @@ class Calculator(tk.Tk):
         self.result_entry.bind("<BackSpace>", self.backspace)  # バックスペース対応
 
         # 音声入力ボタン
-        voice_button = tk.Button(self, text="🎤", font=("Arial", 18), command=self.voice_input)
-        voice_button.grid(row=0, column=4, padx=5, pady=5)  # 音声入力ボタンを追加
+        # voice_button = tk.Button(self, text="🎤", font=("Arial", 18), command=self.voice_input)
+        # voice_button.grid(row=0, column=4, padx=5, pady=5)  # 音声入力ボタンを追加
 
         # ボタン配置
         buttons = [
