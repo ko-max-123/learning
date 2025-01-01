@@ -11,3 +11,6 @@
 /kabulist.txt
 /stock_prices_with_names.xlsx
 /build
+/pdf_files
+/pdf_files/*
+/stock_info.xlsx
