@@ -12,5 +12,5 @@
 /stock_prices_with_names.xlsx
 /build
 /pdf_files
-/pdf_files/*
+/pdf_files/*.pdf
 /stock_info.xlsx
