@@ -1,0 +1,4 @@
+Error processing URL https://kabutan.jp/stock/finance?code=2934: [WinError 183] 既に存在するファイルを作成することはできません。: 'd:\\github_dev\\learning\\pdf_files\\140120241210536577.pdf' -> 'd:\\github_dev\\learning\\pdf_files\\2934.pdf'
+PDF link not found for URL: https://kabutan.jp/stock/finance?code=274A
+PDF link not found for URL: https://kabutan.jp/stock/finance?code=277A
+PDF link not found for URL: https://kabutan.jp/stock/finance?code=280A
