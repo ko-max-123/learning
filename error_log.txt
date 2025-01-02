@@ -2,3 +2,4 @@ Error processing URL https://kabutan.jp/stock/finance?code=2934: [WinError 183] 
 PDF link not found for URL: https://kabutan.jp/stock/finance?code=274A
 PDF link not found for URL: https://kabutan.jp/stock/finance?code=277A
 PDF link not found for URL: https://kabutan.jp/stock/finance?code=280A
+Error processing URL https://kabutan.jp/stock/finance?code=9368: HTTPConnectionPool(host='localhost', port=57962): Read timed out. (read timeout=120)
