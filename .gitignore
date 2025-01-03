@@ -14,3 +14,4 @@
 /pdf_files
 /pdf_files/*.pdf
 /stock_info.xlsx
+/token.txt
